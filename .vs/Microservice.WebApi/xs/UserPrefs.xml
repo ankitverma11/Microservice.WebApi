@@ -1,0 +1,6 @@
+﻿<Properties StartupConfiguration="{EAE8CFC0-1CBA-471C-AF36-1C968E11C405}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Microservices.Customer.Microservice FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Microservices.Product.Microservice FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Gateway.WebApi PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

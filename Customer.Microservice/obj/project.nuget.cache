@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wGRIhw7ZO19mt5ioOSzWDL1t6K5uP3qcXADSW8h3lTUBmpAaLQkKl81Cy0MS2lsPUX8ty5BedEhZN2FdF+EueA==",
+  "success": true,
+  "projectFilePath": "/Users/ankitkumar/Projects/Microservice.WebApi/Customer.Microservice/Customer.Microservice.csproj",
+  "expectedPackageFiles": [
+    "/Users/ankitkumar/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/ankitkumar/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/ankitkumar/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/ankitkumar/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/ankitkumar/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/ankitkumar/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
