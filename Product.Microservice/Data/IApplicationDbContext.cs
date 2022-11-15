@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Product.Microservice.Data
-{
+{ 
 	public interface IApplicationDbContext
 	{
-        DbSet<Entities.Product>? Product { get; set; }
+		DbSet<Entities.Product>? Product { get; set; } 
 
 		Task<int> SaveChanges();
 	}

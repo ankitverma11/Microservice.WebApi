@@ -3,17 +3,19 @@ using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
-     .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
-     .AddEnvironmentVariables();
+builder.Services.AddEndpointsApiExplorer();
 
+
+builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 builder.Services.AddOcelot(builder.Configuration);
-
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.UseHttpsRedirection();
 
-app.UseOcelot().Wait();
+app.UseAuthorization();
+
+app.MapControllers();
+
+await app.UseOcelot();
 
 app.Run();
-

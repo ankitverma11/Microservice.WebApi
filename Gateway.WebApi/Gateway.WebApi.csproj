@@ -10,6 +10,6 @@
     <None Remove="Ocelot" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Ocelot" Version="15.0.0" />
+    <PackageReference Include="Ocelot" Version="18.0.0" />
   </ItemGroup>
 </Project>

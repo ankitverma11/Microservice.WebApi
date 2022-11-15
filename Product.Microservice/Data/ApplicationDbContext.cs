@@ -13,15 +13,16 @@ namespace Product.Microservice.Data
 
         public async Task<int> SaveChanges()
         {
-            var productId = 0;
+            int productId = 0;
             try
             {
                 productId = await base.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-               throw ex;
+                throw ex.InnerException;
             }
+
             return productId;
         }
     }

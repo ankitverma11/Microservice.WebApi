@@ -11,6 +11,7 @@ using Product.Microservice.Data;
 namespace Product.Microservice.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class ProductController : Controller
     {
         private IApplicationDbContext _context;
@@ -23,11 +24,18 @@ namespace Product.Microservice.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var products = await _context.Product.ToListAsync();
-            if (products == null)
-                return NotFound();
+           try
+            {
+               var products = await _context.Product.ToListAsync();
+                if (products == null)
+                    return NotFound();
 
-            return Ok(products);
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpGet("{id}")]
