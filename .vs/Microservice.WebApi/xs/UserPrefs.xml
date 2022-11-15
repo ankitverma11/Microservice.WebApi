@@ -1,6 +1,44 @@
-﻿<Properties StartupConfiguration="{EAE8CFC0-1CBA-471C-AF36-1C968E11C405}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Microservices.Customer.Microservice FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Microservices.Product.Microservice FirstBuild="True" />
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{ECB82FC4-C47A-4474-A7BC-DEC7AFDDF797}" ItemName="Customer.Microservice" ConfigurationId="Default" />
+        <StartupItem ItemId="{EAE8CFC0-1CBA-471C-AF36-1C968E11C405}" ItemName="Gateway.WebApi" ConfigurationId="Default" />
+        <StartupItem ItemId="{EB54C19D-E178-43F0-83BA-72BB7C23A7BD}" ItemName="Product.Microservice" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Microservices.Customer.Microservice PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Microservices.Product.Microservice PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Gateway.WebApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Customer.Microservice/Program.cs">
+    <Files>
+      <File FileName="Gateway.WebApi/Program.cs" Line="18" Column="1" />
+      <File FileName="Gateway.WebApi/appsettings.json" Line="1" Column="1" />
+      <File FileName="Gateway.WebApi/ocelot.json" Line="2" Column="14" />
+      <File FileName="Gateway.WebApi/Properties/launchSettings.json" Line="7" Column="23" />
+      <File FileName="Product.Microservice/Program.cs" Line="25" Column="1" />
+      <File FileName="Customer.Microservice/Program.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Microservice.WebApi" expanded="True">
+            <Node name="Microservices" expanded="True">
+              <Node name="Customer.Microservice" expanded="True" />
+              <Node name="Product.Microservice" expanded="True" />
+            </Node>
+            <Node name="Gateway.WebApi" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
