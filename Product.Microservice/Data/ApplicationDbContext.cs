@@ -9,11 +9,20 @@ namespace Product.Microservice.Data
         {
 		}
 
-        public DbSet<Entities.Product>? Products { get; set; }
+        public DbSet<Entities.Product>? Product { get; set; }
 
-        public async new Task<int> SaveChanges()
+        public async Task<int> SaveChanges()
         {
-            return await base.SaveChangesAsync();
+            var productId = 0;
+            try
+            {
+                productId = await base.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+               throw ex;
+            }
+            return productId;
         }
     }
 }

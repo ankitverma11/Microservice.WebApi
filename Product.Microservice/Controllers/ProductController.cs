@@ -23,7 +23,7 @@ namespace Product.Microservice.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var products = await _context.Products.ToListAsync();
+            var products = await _context.Product.ToListAsync();
             if (products == null)
                 return NotFound();
 
@@ -33,7 +33,7 @@ namespace Product.Microservice.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var product = await _context.Products.Where(a => a.Id == id).FirstOrDefaultAsync();
+            var product = await _context.Product.Where(a => a.Id == id).FirstOrDefaultAsync();
             if (product == null)
                 return NotFound();
 
@@ -43,7 +43,7 @@ namespace Product.Microservice.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Entities.Product product)
         {
-            _context.Products?.Add(product);
+            _context.Product?.Add(product);
             await _context.SaveChanges();
             return Ok(product.Id);
         }
@@ -51,7 +51,7 @@ namespace Product.Microservice.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Entities.Product product)
         {
-            var productId = _context.Products.Where(a => a.Id == id).FirstOrDefault();
+            var productId = _context.Product.Where(a => a.Id == id).FirstOrDefault();
             if (productId == null)
                 return NotFound();
             else
@@ -68,11 +68,11 @@ namespace Product.Microservice.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _context.Products.Where(a => a.Id == id).FirstOrDefaultAsync();
+            var product = await _context.Product.Where(a => a.Id == id).FirstOrDefaultAsync();
             if (product == null)
                 return NotFound();
 
-            _context.Products.Remove(product);
+            _context.Product.Remove(product);
 
             await _context.SaveChanges();
 
